@@ -294,43 +294,42 @@
         <h2 id="ISCC-第一题"><a href="#ISCC-第一题" class="headerlink" title="ISCC 第一题"></a>ISCC 第一题</h2><p>先看程序吧，拖到IDA里，直接来到算法处，题目要求是需要三个字符串的形式，那就看看有哪三个字符串吧，</p>
 <hr>
 <p><img src="http://upload-images.jianshu.io/upload_images/8032631-6e7f081c2e56b728.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Image.png"><br>首先来到sub_400646.</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/8032631-ea023257cc32b7f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Image.png"><br>果然，里面有两个循环，通过循环得到两串字符串，一开始看不懂这个，经指导，明白的一点。OK，那就用python写吧  </p>
-<blockquote>
-<ul>
-<li>#!/usr/bin/python</li>
-<li>#-<em>codeing:utf-8 -</em>-</li>
-<li>t=’’</li>
-<li>list=[108, 49, 110, 117,120,99,114,97,99,107]</li>
-<li>for i in list:</li>
-<li>t+=chr(i)</li>
-<li>print(t)</li>
-</ul>
-</blockquote>
-<p><img src="http://upload-images.jianshu.io/upload_images/8032631-a5aaa3eab4ce16e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Image.png">  </p>
+<p><img src="http://upload-images.jianshu.io/upload_images/8032631-ea023257cc32b7f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Image.png"><br>果然，里面有两个循环，通过循环得到两串字符串。OK，那就用python写吧  </p>
+<pre><code>t=&apos;&apos;
+list=[108, 49, 110, 117,120,99,114,97,99,107]
+for i in list:
+     t+=chr(i)
+print(t)
+运行出来正好是两个字符串 l1nuxcrack
+</code></pre><p><img src="http://upload-images.jianshu.io/upload_images/8032631-a5aaa3eab4ce16e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Image.png">  </p>
 <hr>
-<blockquote>
 <p>a1=73<br>a1+1=76<br>a1+2=67<br>a1+3=70<br>a1+4=33</p>
-</blockquote>
 <hr>
-<blockquote>
-<pre><code>#!/usr/bin/python
-#-*- codeing:utf-8 -*-
+<pre><code>    m=&apos;&apos;
+list1=[73,76,67,70,33]
+for j in list1:
+    m+=chr(j)
+print(m)
+
+ILCF!
+</code></pre><hr>
+<pre><code>#! /usr/bin/python
+# -*- codeing:utf-8 -*-
 key=[73,76,67,70,33,108,49,110,117,120,99,114,97,99,107]
 s=&apos;&apos;
 t=&apos;&apos;
 q=&apos;&apos;
 for i in range(0,len(key)):
-if i &lt;5:
-s+=chr(key[i])
-elif i&lt;10:
-t+=chr(key[i])
-else:
-q+=chr(key[i])
+    if i &lt;5:
+        s+=chr(key[i])
+    elif i&lt;10:
+        t+=chr(key[i])
+    else:
+        q+=chr(key[i])
 print(&quot;flag{%s_%s_%s}&quot;% (t,q,s))  
 
 flag{l1nux_crack_ILCF!}
-</code></pre></blockquote>
-
+</code></pre>
       
     </div>
     

@@ -9,20 +9,20 @@
   
   <title>^_^</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="ISCC 第一题先看程序吧，拖到IDA里，直接来到算法处，题目要求是需要三个字符串的形式，那就看看有哪三个字符串吧，  首先来到sub_400646. 果然，里面有两个循环，通过循环得到两串字符串，一开始看不懂这个，经指导，明白的一点。OK，那就用python写吧     #!/usr/bin/python #-codeing:utf-8 -- t=’’ list=[108, 49, 110, 1">
+  <meta name="description" content="ISCC 第一题先看程序吧，拖到IDA里，直接来到算法处，题目要求是需要三个字符串的形式，那就看看有哪三个字符串吧，  首先来到sub_400646. 果然，里面有两个循环，通过循环得到两串字符串。OK，那就用python写吧   t=&amp;apos;&amp;apos; list=[108, 49, 110, 117,120,99,114,97,99,107] for i in list:      t+=">
 <meta property="og:type" content="article">
 <meta property="og:title" content="^_^">
 <meta property="og:url" content="http://wpx.dropsec.xyz/2017/09/21/ISCC/index.html">
 <meta property="og:site_name" content="^_^">
-<meta property="og:description" content="ISCC 第一题先看程序吧，拖到IDA里，直接来到算法处，题目要求是需要三个字符串的形式，那就看看有哪三个字符串吧，  首先来到sub_400646. 果然，里面有两个循环，通过循环得到两串字符串，一开始看不懂这个，经指导，明白的一点。OK，那就用python写吧     #!/usr/bin/python #-codeing:utf-8 -- t=’’ list=[108, 49, 110, 1">
+<meta property="og:description" content="ISCC 第一题先看程序吧，拖到IDA里，直接来到算法处，题目要求是需要三个字符串的形式，那就看看有哪三个字符串吧，  首先来到sub_400646. 果然，里面有两个循环，通过循环得到两串字符串。OK，那就用python写吧   t=&amp;apos;&amp;apos; list=[108, 49, 110, 117,120,99,114,97,99,107] for i in list:      t+=">
 <meta property="og:locale" content="zh-CN,zh;q=0.8">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/8032631-6e7f081c2e56b728.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/8032631-ea023257cc32b7f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/8032631-a5aaa3eab4ce16e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-09-21T04:29:25.398Z">
+<meta property="og:updated_time" content="2017-09-21T05:29:51.096Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="^_^">
-<meta name="twitter:description" content="ISCC 第一题先看程序吧，拖到IDA里，直接来到算法处，题目要求是需要三个字符串的形式，那就看看有哪三个字符串吧，  首先来到sub_400646. 果然，里面有两个循环，通过循环得到两串字符串，一开始看不懂这个，经指导，明白的一点。OK，那就用python写吧     #!/usr/bin/python #-codeing:utf-8 -- t=’’ list=[108, 49, 110, 1">
+<meta name="twitter:description" content="ISCC 第一题先看程序吧，拖到IDA里，直接来到算法处，题目要求是需要三个字符串的形式，那就看看有哪三个字符串吧，  首先来到sub_400646. 果然，里面有两个循环，通过循环得到两串字符串。OK，那就用python写吧   t=&amp;apos;&amp;apos; list=[108, 49, 110, 117,120,99,114,97,99,107] for i in list:      t+=">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/8032631-6e7f081c2e56b728.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
     <link rel="alternative" href="/atom.xml" title="^_^" type="application/atom+xml">
@@ -294,43 +294,42 @@
         <h2 id="ISCC-第一题"><a href="#ISCC-第一题" class="headerlink" title="ISCC 第一题"></a>ISCC 第一题</h2><p>先看程序吧，拖到IDA里，直接来到算法处，题目要求是需要三个字符串的形式，那就看看有哪三个字符串吧，</p>
 <hr>
 <p><img src="http://upload-images.jianshu.io/upload_images/8032631-6e7f081c2e56b728.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Image.png"><br>首先来到sub_400646.</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/8032631-ea023257cc32b7f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Image.png"><br>果然，里面有两个循环，通过循环得到两串字符串，一开始看不懂这个，经指导，明白的一点。OK，那就用python写吧  </p>
-<blockquote>
-<ul>
-<li>#!/usr/bin/python</li>
-<li>#-<em>codeing:utf-8 -</em>-</li>
-<li>t=’’</li>
-<li>list=[108, 49, 110, 117,120,99,114,97,99,107]</li>
-<li>for i in list:</li>
-<li>t+=chr(i)</li>
-<li>print(t)</li>
-</ul>
-</blockquote>
-<p><img src="http://upload-images.jianshu.io/upload_images/8032631-a5aaa3eab4ce16e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Image.png">  </p>
+<p><img src="http://upload-images.jianshu.io/upload_images/8032631-ea023257cc32b7f4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Image.png"><br>果然，里面有两个循环，通过循环得到两串字符串。OK，那就用python写吧  </p>
+<pre><code>t=&apos;&apos;
+list=[108, 49, 110, 117,120,99,114,97,99,107]
+for i in list:
+     t+=chr(i)
+print(t)
+运行出来正好是两个字符串 l1nuxcrack
+</code></pre><p><img src="http://upload-images.jianshu.io/upload_images/8032631-a5aaa3eab4ce16e2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Image.png">  </p>
 <hr>
-<blockquote>
 <p>a1=73<br>a1+1=76<br>a1+2=67<br>a1+3=70<br>a1+4=33</p>
-</blockquote>
 <hr>
-<blockquote>
-<pre><code>#!/usr/bin/python
-#-*- codeing:utf-8 -*-
+<pre><code>    m=&apos;&apos;
+list1=[73,76,67,70,33]
+for j in list1:
+    m+=chr(j)
+print(m)
+
+ILCF!
+</code></pre><hr>
+<pre><code>#! /usr/bin/python
+# -*- codeing:utf-8 -*-
 key=[73,76,67,70,33,108,49,110,117,120,99,114,97,99,107]
 s=&apos;&apos;
 t=&apos;&apos;
 q=&apos;&apos;
 for i in range(0,len(key)):
-if i &lt;5:
-s+=chr(key[i])
-elif i&lt;10:
-t+=chr(key[i])
-else:
-q+=chr(key[i])
+    if i &lt;5:
+        s+=chr(key[i])
+    elif i&lt;10:
+        t+=chr(key[i])
+    else:
+        q+=chr(key[i])
 print(&quot;flag{%s_%s_%s}&quot;% (t,q,s))  
 
 flag{l1nux_crack_ILCF!}
-</code></pre></blockquote>
-
+</code></pre>
       
     </div>
     
@@ -341,7 +340,7 @@ flag{l1nux_crack_ILCF!}
         <p><span>本文标题:</span><a  href="/2017/09/21/ISCC/"></a></p>
         <p><span>文章作者:</span><a  href="/" title="访问 Winter 的个人博客">Winter</a></p>
         <p><span>发布时间:</span>2017年09月21日 - 12时28分</p>
-        <p><span>最后更新:</span>2017年09月21日 - 12时29分</p>
+        <p><span>最后更新:</span>2017年09月21日 - 13时29分</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2017/09/21/ISCC/" title="">http://wpx.dropsec.xyz/2017/09/21/ISCC/</a>
             <span class="copy-path" data-clipboard-text="原文: http://wpx.dropsec.xyz/2017/09/21/ISCC/　　作者: Winter" title=""></span>

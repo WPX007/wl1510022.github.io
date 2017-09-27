@@ -7,21 +7,21 @@
   
   
   
-  <title>^_^</title>
+  <title>ISCC第二题 | ^_^</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="ISCC第二题首先看到题目是个.out文件，没什么用，可能可以直接拉到IDA里，那就直接拉进64位进行分析，进去之后，反汇编之后发现了这个。发现flag在if条件语句的第一个分支里，那就进入test函数。 进入到test函数之后。   果然发现了算法，那就慢慢分析这个算法的意思吧。首先有一个数组，数组大小包含s2,v5,v6,v7。接下来慢慢看，发现有个长度比较，推断可能是正确答案的长度。下面有个">
+  <meta name="description" content="ISCC第二题这题也是一个算法题，仔细分析之后，并不是特别难。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="^_^">
+<meta property="og:title" content="ISCC第二题">
 <meta property="og:url" content="http://wpx.dropsec.xyz/2017/09/21/ISCC第二题/index.html">
 <meta property="og:site_name" content="^_^">
-<meta property="og:description" content="ISCC第二题首先看到题目是个.out文件，没什么用，可能可以直接拉到IDA里，那就直接拉进64位进行分析，进去之后，反汇编之后发现了这个。发现flag在if条件语句的第一个分支里，那就进入test函数。 进入到test函数之后。   果然发现了算法，那就慢慢分析这个算法的意思吧。首先有一个数组，数组大小包含s2,v5,v6,v7。接下来慢慢看，发现有个长度比较，推断可能是正确答案的长度。下面有个">
+<meta property="og:description" content="ISCC第二题这题也是一个算法题，仔细分析之后，并不是特别难。">
 <meta property="og:locale" content="zh-CN,zh;q=0.8">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/8032631-d44b02e8ede2cdfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/8032631-254a7374cf41970e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2017-09-21T09:47:18.149Z">
+<meta property="og:updated_time" content="2017-09-26T10:46:04.157Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="^_^">
-<meta name="twitter:description" content="ISCC第二题首先看到题目是个.out文件，没什么用，可能可以直接拉到IDA里，那就直接拉进64位进行分析，进去之后，反汇编之后发现了这个。发现flag在if条件语句的第一个分支里，那就进入test函数。 进入到test函数之后。   果然发现了算法，那就慢慢分析这个算法的意思吧。首先有一个数组，数组大小包含s2,v5,v6,v7。接下来慢慢看，发现有个长度比较，推断可能是正确答案的长度。下面有个">
+<meta name="twitter:title" content="ISCC第二题">
+<meta name="twitter:description" content="ISCC第二题这题也是一个算法题，仔细分析之后，并不是特别难。">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/8032631-d44b02e8ede2cdfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
   
     <link rel="alternative" href="/atom.xml" title="^_^" type="application/atom+xml">
@@ -287,10 +287,31 @@
       <input type="hidden" class="isFancy" />
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      ISCC第二题
+    </h1>
+  
+
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="ISCC第二题"><a href="#ISCC第二题" class="headerlink" title="ISCC第二题"></a>ISCC第二题</h1><p>首先看到题目是个.out文件，没什么用，可能可以直接拉到IDA里，那就直接拉进64位进行分析，进去之后，反汇编之后发现了这个。发现flag在if条件语句的第一个分支里，那就进入test函数。<br><img src="http://upload-images.jianshu.io/upload_images/8032631-d44b02e8ede2cdfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Image.png"></p>
+        <p><excerpt in="" index="" |="" 首页摘要=""><br><strong>ISCC第二题</strong><br>这题也是一个算法题，仔细分析之后，并不是特别难。<br><a id="more"></a>  </excerpt></p>
+<p><the rest="" of="" contents="" |="" 余下全文=""></the></p>
+<h1 id="ISCC第二题"><a href="#ISCC第二题" class="headerlink" title="ISCC第二题"></a>ISCC第二题</h1><p>首先看到题目是个.out文件，没什么用，可能可以直接拉到IDA里，那就直接拉进64位进行分析，进去之后，反汇编之后发现了这个。发现flag在if条件语句的第一个分支里，那就进入test函数。<br><img src="http://upload-images.jianshu.io/upload_images/8032631-d44b02e8ede2cdfb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Image.png"></p>
 <p>进入到test函数之后。</p>
 <p><img src="http://upload-images.jianshu.io/upload_images/8032631-254a7374cf41970e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Image.png"></p>
 <hr>
@@ -334,12 +355,12 @@ flag{1t.is.5O.easy}
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a  href="/2017/09/21/ISCC第二题/"></a></p>
+        <p><span>本文标题:</span><a  href="/2017/09/21/ISCC第二题/">ISCC第二题</a></p>
         <p><span>文章作者:</span><a  href="/" title="访问 Winter 的个人博客">Winter</a></p>
         <p><span>发布时间:</span>2017年09月21日 - 17时43分</p>
-        <p><span>最后更新:</span>2017年09月21日 - 17时47分</p>
+        <p><span>最后更新:</span>2017年09月26日 - 18时46分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2017/09/21/ISCC第二题/" title="">http://wpx.dropsec.xyz/2017/09/21/ISCC第二题/</a>
+            <span>原始链接:</span><a class="post-url" href="/2017/09/21/ISCC第二题/" title="ISCC第二题">http://wpx.dropsec.xyz/2017/09/21/ISCC第二题/</a>
             <span class="copy-path" data-clipboard-text="原文: http://wpx.dropsec.xyz/2017/09/21/ISCC第二题/　　作者: Winter" title=""></span>
         </p>
         <p>
@@ -351,9 +372,18 @@ flag{1t.is.5O.easy}
 
 <nav id="article-nav">
   
+    <a  href="/2017/09/27/小谈PE/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          小谈PE文件
+        
+      </div>
+    </a>
+  
   
     <a  href="/2017/09/21/ISCC第一题/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title"></div>
+      <div class="article-nav-title">ISCC第一题</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -436,16 +466,18 @@ flag{1t.is.5O.easy}
 
     <div class="scroll" id="post-nav-button">
         
-            <a  href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a  href="/2017/09/27/小谈PE/" title="上一篇: 小谈PE文件">
+                <i class="fa fa-angle-left"></i>
+            </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a  href="/2017/09/21/ISCC第一题/" title="下一篇: ">
+            <a  href="/2017/09/21/ISCC第一题/" title="下一篇: ISCC第一题">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/09/21/ISCC第二题/">ISCC第二题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/21/ISCC第一题/">ISCC第一题</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2017/09/27/小谈PE/">小谈PE文件</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/21/ISCC第二题/">ISCC第二题</a></li><li class="post-list-item"><a class="post-list-link" href="/2017/09/21/ISCC第一题/">ISCC第一题</a></li></ul>
     <script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js"></script>
     <script>
         $(".post-list").addClass("toc-article");
